@@ -1,10 +1,6 @@
-C:\Users\Youcode\Downloads\Maska-master\Maska-master\src\main\java\org\youcode\config\WebConfig.java
-C:\Users\Youcode\Downloads\Maska-master\Maska-master\src\main\java\org\youcode\controller\MembreController.java
 C:\Users\Youcode\Downloads\Maska-master\Maska-master\src\main\java\org\youcode\domain\Membre.java
-C:\Users\Youcode\Downloads\Maska-master\Maska-master\src\main\java\org\youcode\exception\GlobalExceptionHandler.java
-C:\Users\Youcode\Downloads\Maska-master\Maska-master\src\main\java\org\youcode\exception\MembreNotFoundException.java
-C:\Users\Youcode\Downloads\Maska-master\Maska-master\src\main\java\org\youcode\exception\MembreValidationException.java
-C:\Users\Youcode\Downloads\Maska-master\Maska-master\src\main\java\org\youcode\Main.java
+C:\Users\Youcode\Downloads\Maska-master\Maska-master\src\main\java\org\youcode\controller\MembreController.java
 C:\Users\Youcode\Downloads\Maska-master\Maska-master\src\main\java\org\youcode\repository\MembreRepository.java
 C:\Users\Youcode\Downloads\Maska-master\Maska-master\src\main\java\org\youcode\services\MembreService.java
 C:\Users\Youcode\Downloads\Maska-master\Maska-master\src\main\java\org\youcode\services\MembreServiceImp.java
+C:\Users\Youcode\Downloads\Maska-master\Maska-master\src\main\java\org\youcode\Main.java

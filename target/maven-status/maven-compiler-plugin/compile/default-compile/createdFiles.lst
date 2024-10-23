@@ -1,11 +1,7 @@
 org\youcode\domain\Membre.class
 org\youcode\domain\Membre$MembreBuilder.class
 org\youcode\services\MembreServiceImp.class
-org\youcode\config\WebConfig.class
-org\youcode\exception\MembreValidationException.class
 org\youcode\controller\MembreController.class
-org\youcode\exception\MembreNotFoundException.class
 org\youcode\repository\MembreRepository.class
 org\youcode\Main.class
-org\youcode\exception\GlobalExceptionHandler.class
 org\youcode\services\MembreService.class

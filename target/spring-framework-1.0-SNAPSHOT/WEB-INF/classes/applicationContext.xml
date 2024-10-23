@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="https://www.springframework.org/schema/beans"
+<beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:tx="https://www.springframework.org/schema/tx"
-       xmlns:context="https://www.springframework.org/schema/context"
-       xmlns:jpa="https://www.springframework.org/schema/data/jpa"
-       xmlns:aop="https://www.springframework.org/schema/aop"
-       xsi:schemaLocation="
-       https://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
-       https://www.springframework.org/schema/tx https://www.springframework.org/schema/tx/spring-tx.xsd
-       https://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd
-       https://www.springframework.org/schema/data/jpa https://www.springframework.org/schema/data/jpa/spring-jpa.xsd
-       https://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/data/jpa
+       http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+       http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <!-- Enable component scanning for Spring annotations -->
     <context:component-scan base-package="org.youcode"/>
@@ -21,7 +25,7 @@
     <!-- PostgreSQL DataSource Configuration -->
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="org.postgresql.Driver"/>
-        <property name="url" value="jdbc:postgresql://localhost:5432/maska"/>
+        <property name="url" value="jdbc:postgresql://localhost:5432/mska"/>
         <property name="username" value="abdoo"/>
         <property name="password" value=""/>
     </bean>
