@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Youcode
-  Date: 22/10/2024
-  Time: 16:35
-  To change this template use File | Settings | File Templates.
---%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <html lang="en">
 <head>
@@ -15,41 +8,72 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #E9ECEF;
+            font-family: 'Open Sans', sans-serif;
+            padding: 20px;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+        .btn-primary {
+            background-color: #28a745;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
 <div class="container mt-5">
-    <h2 class="mb-4">Create Membre</h2>
-    <form:form method="post" action="${pageContext.request.contextPath}/membre/save" modelAttribute="membre">
-        <div class="form-group">
-            <label for="membershipNumber">Membership Number:</label>
-            <form:input path="membershipNumber" class="form-control" id="membershipNumber" />
+    <div class="card">
+        <div class="card-header">
+            <h2 class="mb-0">Create Membre</h2>
         </div>
-        <div class="form-group">
-            <label for="firstName">First Name:</label>
-            <form:input path="firstName" class="form-control" id="firstName" />
+        <div class="card-body">
+            <form:form method="post" action="${pageContext.request.contextPath}/membre/save" modelAttribute="membre">
+                <div class="form-group">
+                    <label for="membershipNumber">Membership Number:</label>
+                    <form:input path="membershipNumber" class="form-control" id="membershipNumber" />
+                </div>
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <form:input path="firstName" class="form-control" id="firstName" />
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <form:input path="lastName" class="form-control" id="lastName" />
+                </div>
+                <div class="form-group">
+                    <label for="idDocument">ID Document:</label>
+                    <form:input path="idDocument" class="form-control" id="idDocument" />
+                </div>
+                <div class="form-group">
+                    <label for="nationality">Nationality:</label>
+                    <form:input path="nationality" class="form-control" id="nationality" />
+                </div>
+                <div class="form-group">
+                    <label for="membershipDate">Membership Date:</label>
+                    <form:input path="membershipDate" type="date" class="form-control" id="membershipDate" />
+                </div>
+                <div class="form-group">
+                    <label for="licenseExpiryDate">License Expiry Date:</label>
+                    <form:input path="licenseExpiryDate" type="date" class="form-control" id="licenseExpiryDate" />
+                </div>
+                <button type="submit" class="btn btn-primary">Create Membre</button>
+                <a href="${pageContext.request.contextPath}/membre" class="btn btn-secondary ml-2">Cancel</a>
+            </form:form>
         </div>
-        <div class="form-group">
-            <label for="lastName">Last Name:</label>
-            <form:input path="lastName" class="form-control" id="lastName" />
-        </div>
-        <div class="form-group">
-            <label for="idDocument">ID Document:</label>
-            <form:input path="idDocument" class="form-control" id="idDocument" />
-        </div>
-        <div class="form-group">
-            <label for="nationality">Nationality:</label>
-            <form:input path="nationality" class="form-control" id="nationality" />
-        </div>
-        <div class="form-group">
-            <label for="membershipDate">Membership Date:</label>
-            <form:input path="membershipDate" type="date" class="form-control" id="membershipDate" />
-        </div>
-        <div class="form-group">
-            <label for="licenseExpiryDate">License Expiry Date:</label>
-            <form:input path="licenseExpiryDate" type="date" class="form-control" id="licenseExpiryDate" />
-        </div>
-        <button type="submit" class="btn btn-primary">Create Membre</button>
-    </form:form>
+    </div>
 </div>
 </body>
 </html>
