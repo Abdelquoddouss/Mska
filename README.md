@@ -17,14 +17,13 @@ such as creating, viewing, updating, and deleting users through a web interface.
 - [Spring MVC](#spring-mvc);
 - [Installation and Setup](#installation-and-setup)
 
-### Project Structure
+### Dependency Injection (DI)
 L'Injection de Dépendances est un modèle de conception qui permet d'implémenter l'Inversion de Contrôle (IoC).
 il contient trois type : (Injection par constructeur;setter;interface)
 
-### Dependency Injection (DI)
+### Inversion of Control (IoC)
 L'Inversion de Contrôle est un principe de programmation ou la gestion des dépendances sont gérées par un cadre externe, il s implement par l'Injection de Dépendances (DI)
 il definie par XML et Annotations.
-### Inversion of Control (IoC)
 
 ### Spring Beans
 Dans Spring, les objets principaux de l'application gérés par le conteneur IoC de Spring sont appelés "beans". Un bean est un objet créé, assemblé et géré par le conteneur Spring, selon la configuration fournie.
